@@ -33,10 +33,10 @@ export class ErrorHandlerService {
     this.createErrorMessage(error);
     this.router.navigate(['/404']);
   }
- 
+
   private handleOtherError(error: HttpErrorResponse){
     this.createErrorMessage(error);
-    //TODO: this will be fixed later;
+    $('#errorModal').modal();
   }
  
   private createErrorMessage(error: HttpErrorResponse){

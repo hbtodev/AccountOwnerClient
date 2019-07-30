@@ -1,6 +1,5 @@
 import { Account } from "./account.model";
 
-
 export interface Owner{
     id: string;
     name: string;
@@ -10,3 +9,4 @@ export interface Owner{
     accounts?: Account[];
 
 }
+
